@@ -37,8 +37,17 @@
           <li class="nav-item">
             <a class="nav-link" href="#about">À propos</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#consultations">Consultations</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" role="button" href="#consultations" data-bs-toggle="dropdown"
+              aria-expanded="false">Consultations</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#consultations">Page principale</a></li>
+              <li><a class="dropdown-item" href="pages/pour-qui.html">Pour qui ?</a></li>
+              <li><a class="dropdown-item" href="pages/qu-est-ce-que.html">Qu'est-ce-qu'une thérapie de couple ?</a>
+              </li>
+              <li><a class="dropdown-item" href="pages/quand.html">Quand consulter ?</a></li>
+              <li><a class="dropdown-item" href="pages/objectifs.html">Objectifs</a></li>
+            </ul>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#contact">Contact</a>
@@ -268,25 +277,25 @@
                 <h4 class="mb-4" style="color: var(--primary-red);">Contactez moi</h4>
                 <div class="mb-3">
                   <label>Nom et prénom
-                    <input name="name" type="text" class="form-control" placeholder="Votre Nom"
+                    <input name="Nom&nbsp;et&nbsp;Prénom" type="text" class="form-control" placeholder="Votre Nom"
                       aria-label="Nom et prénom" required>
                   </label>
                 </div>
                 <div class="mb-3">
                   <label>Email
-                    <input name="email" type="email" class="form-control" placeholder="Votre Email" aria-label="Email"
+                    <input name="Email" type="email" class="form-control" placeholder="Votre Email" aria-label="Email"
                       required>
                   </label>
                 </div>
                 <div class="mb-3">
                   <label>Numéro de téléphone
-                    <input name="phone" type="tel" class="form-control" placeholder="Votre Numéro de Téléphone"
+                    <input name="Numéro&nbsp;de&nbsp;Téléphone" type="tel" class="form-control" placeholder="Votre Numéro de Téléphone"
                       aria-label="Numéro de téléphone">
                   </label>
                 </div>
                 <div class="mb-3">
                   <label>Mode de contact
-                    <select name="method" class="form-control" aria-label="Mode de contact">
+                    <select name="Mode&nbsp;de&nbsp;contact" class="form-control" aria-label="Mode de contact">
                       <option>Mode de contact souhaité</option>
                       <option>Téléphone</option>
                       <option>Email</option>
@@ -295,7 +304,7 @@
                 </div>
                 <div class="mb-4">
                   <label>Message
-                    <textarea name="message" class="form-control" rows="4" placeholder="Votre Message"
+                    <textarea name="Message" class="form-control" rows="4" placeholder="Votre Message"
                       aria-label="Message"></textarea>
                   </label>
                 </div>
@@ -304,11 +313,12 @@
 
               <div class="col-lg-6">
                 <h4 class="mb-4" style="color: var(--primary-red);">Infos Pratiques</h4>
-                <div class="mb-3">
-                  <i class="fas fa-map-marker-alt me-3" style="color: var(--primary-green);"></i>
-                  <span>865 Route Nationale<br>74300 Magland</span><br>
+                <div style="display: flex;">
+                  <i class="fas fa-map-marker-alt me-3" style="color: var(--primary-green); padding-top: 5px;"></i>
+                    <div class="mb-3" style="padding-left: 7.5px;"><a href="https://www.google.com/maps/place/865+Rue+nationale,+74300+Magland/"
+                      target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: var(--dark-brown);"><span>865 Route Nationale<br>74300 Magland</span></a><br>
                   1er étage, sans ascenseur<br>
-                  Parking gratuit en face de l'immeuble
+                  Parking gratuit en face de l'immeuble</div>
 
                 </div>
                 <div class="mb-3">
@@ -322,8 +332,14 @@
                     style="color: var(--dark-brown); text-decoration: none;"><span>contact@therapeute-de-couple.com</span></a>
                 </div>
                 <hr>
-                <h4 class="mb-4" style="color: var(--primary-red);">Consultations</h5>
-                  <p class="mb-1">Uniquement sur rendez-vous.</p>
+                <h4 class="mb-4" style="color: var(--primary-red);">Consultations</h4>
+                <p> La durée des séances est d’environ une heure, au tarif de 60 euros en individuel, 80 euros en
+                    couple.</p><p>
+                  Règlement par chèque ou espèces. <br>
+                  </p><p>
+                  Le rythme des séances est à convenir ensemble.
+                </p>
+                <p class="mb-1">Uniquement sur rendez-vous.</p>
               </div>
             </div>
           </div>

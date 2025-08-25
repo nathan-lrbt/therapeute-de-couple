@@ -8,9 +8,9 @@
 
 
 @font-face {
-    font-family: "Matt Antique W03 Rom";
-    src: url("https://db.onlinewebfonts.com/t/24c7a73b36135fd4a9a4871dacfa5b1b.eot");
-    src: url("https://db.onlinewebfonts.com/t/24c7a73b36135fd4a9a4871dacfa5b1b.eot?#iefix")format("embedded-opentype"),
+  font-family: "Matt Antique W03 Rom";
+  src: url("https://db.onlinewebfonts.com/t/24c7a73b36135fd4a9a4871dacfa5b1b.eot");
+  src: url("https://db.onlinewebfonts.com/t/24c7a73b36135fd4a9a4871dacfa5b1b.eot?#iefix")format("embedded-opentype"),
     url("https://db.onlinewebfonts.com/t/24c7a73b36135fd4a9a4871dacfa5b1b.woff2")format("woff2"),
     url("https://db.onlinewebfonts.com/t/24c7a73b36135fd4a9a4871dacfa5b1b.woff")format("woff"),
     url("https://db.onlinewebfonts.com/t/24c7a73b36135fd4a9a4871dacfa5b1b.ttf")format("truetype"),
@@ -25,7 +25,7 @@ body {
   position: relative;
 }
 
-label{
+label {
   width: 100%;
 }
 
@@ -41,19 +41,38 @@ label{
   font-size: 2rem;
 }
 
-.active{
+.active {
   color: var(--light-sage) !important;
   border-bottom: 3px solid var(--light-sage);
 }
 
 
 .navbar-nav .nav-link {
-  color: var(--beige) ;
+  color: var(--beige);
   font-weight: 500;
   font-size: 1.5rem;
   padding: 1.5rem 0 1rem 0 !important;
   margin: 0 1rem 5px 1rem;
   transition: color 0.3s ease;
+}
+
+.dropdown-menu {
+  background-color: var(--dark-brown);
+  border-color: var(--light-sage);
+}
+
+.dropdown-item {
+  color: var(--beige);
+}
+
+.dropdown-item:hover {
+  color: var(--light-sage) !important;
+  background-color: var(--dark-brown) !important;
+}
+
+.dropdown-item.active {
+  background-color: var(--dark-brown) !important;
+  background: var(--dark-brown) !important;
 }
 
 .custom-toggler .navbar-toggler-icon {
@@ -62,7 +81,7 @@ label{
 
 .custom-toggler {
   border-color: var(--beige);
-} 
+}
 
 .navbar-nav .nav-link:hover {
   color: var(--light-sage) !important;
@@ -93,10 +112,11 @@ label{
   text-align: justify;
 }
 
-.red{
+.red {
   /* color: var(--primary-red); */
   font-size: 1.5rem;
 }
+
 .btn-primary-custom {
   background-color: var(--primary-red);
   border-color: var(--primary-red);
@@ -147,7 +167,7 @@ label{
   text-align: center;
 }
 
-.lead{
+.lead {
   text-align: justify;
   font-size: 1rem;
 }
@@ -238,13 +258,20 @@ label{
   border-radius: 2px;
 }
 
+.flower-who{
+  height: 200px;
+  padding-bottom: 2rem;
+}
+
 @media (max-width: 768px) {
-  .navbar{
+  .navbar {
     text-align: center;
   }
-  .navbar-brand{
+
+  .navbar-brand {
     padding: 1rem 0;
   }
+
   .hero-title {
     font-size: 2rem;
   }
@@ -263,17 +290,24 @@ label{
     padding-right: 1.5rem;
   }
 
-  .parcours{
+  .couple{
+    padding-bottom: 5rem;
+    padding-left: 0.5rem !important;
+    padding-right: 1rem !important;
+    margin: 0 !important;
+  }
+
+  .parcours {
     padding: 0 calc(var(--bs-gutter-x) * .5) !important;
     padding-bottom: 2rem !important;
   }
-  
-  .approche{
+
+  .approche {
     padding: 0 calc(var(--bs-gutter-x) * .5) !important;
     padding-top: 2rem !important;
   }
 
-  .form{
+  .form {
     padding-bottom: 2rem;
   }
 }
