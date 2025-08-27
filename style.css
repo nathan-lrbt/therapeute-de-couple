@@ -160,7 +160,7 @@ label {
 }
 
 .section-padding2 {
-  padding-top: 120px !important;
+  padding-top: 170px !important;
   padding: 4rem 0;
 }
 
@@ -263,7 +263,7 @@ label {
   border-radius: 2px;
 }
 
-.flower-who{
+.flower-who {
   height: 200px;
   padding-bottom: 2rem;
 }
@@ -295,7 +295,7 @@ label {
     padding-right: 1.5rem;
   }
 
-  .couple{
+  .couple {
     padding-bottom: 5rem;
     padding-left: 0.5rem !important;
     padding-right: 1rem !important;
@@ -314,5 +314,10 @@ label {
 
   .form {
     padding-bottom: 2rem;
+  }
+
+  .section-padding2 {
+    padding-top: 120px !important;
+    padding: 4rem 0;
   }
 }
