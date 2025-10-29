@@ -4,11 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   
   <!-- Balises SEO principales -->
   <title>Thérapeute de couple à Magland – Sonia Michaud | Thérapie relationnelle & accompagnement du couple</title>
-  <meta name="description" content="Sonia Michaud, thérapeute de couple à Magland (Haute-Savoie), vous accompagne pour surmonter les difficultés relationnelles, restaurer la communication et retrouver l’équilibre au sein du couple.">
+  <meta name="description" content="Sonia Michaud, thérapeute de couple à Magland (Haute-Savoie), vous accompagne pour surmonter les difficultés relationnelles, restaurer la communication et retrouver l'équilibre au sein du couple.">
   <meta name="robots" content="index, follow">
 
   <!-- Ciblage géographique -->
@@ -25,13 +24,17 @@
   <meta property="og:url" content="https://therapeute-de-couple.com/">
   <meta property="og:type" content="website">
 
+  <!-- Preconnect pour optimisation -->
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
   <!-- Favicon & styles -->
   <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-  <link href="style.css?v=2" rel="stylesheet">
+  <link href="style.css?v=3" rel="stylesheet">
 
-  <!-- Données structurées JSON-LD (SEO local) / GMB -->
+  <!-- Données structurées JSON-LD (SEO local) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -46,15 +49,18 @@
       "addressCountry": "FR"
     },
     "telephone": "+33612548968",
+    "email": "contact@therapeute-de-couple.com",
     "url": "https://therapeute-de-couple.com",
     "priceRange": "€€",
-    "areaServed": ["Magland", "Sallanches", "Cluses", "Passy", "Chamonix", "Thyez", "Scionzier", "Marignier", "Megève"]
+    "openingHours": "Mo-Sa",
+    "areaServed": ["Magland", "Sallanches", "Cluses", "Passy", "Chamonix", "Bonneville", "Megève"],
+    "sameAs": "https://share.google/4c2pQa7MAfPxALnV1"
   }
   </script>
 </head>
 
-
 <body data-bs-spy="scroll" data-bs-target="#navbar">
+  
   <!-- Navigation -->
   <nav id="navbar" class="navbar navbar-expand-lg navbar-dark fixed-top">
     <div class="container">
@@ -71,16 +77,17 @@
             <a class="nav-link" href="#about">À propos</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" role="button" href="#consultations" data-bs-toggle="dropdown"
-              aria-expanded="false">Consultations</a>
+            <a class="nav-link dropdown-toggle" role="button" href="#consultations" data-bs-toggle="dropdown" aria-expanded="false">Consultations</a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#consultations">Page principale</a></li>
+              <li><a class="dropdown-item" href="#consultations">Services</a></li>
               <li><a class="dropdown-item" href="pages/pour-qui.html">Pour qui ?</a></li>
-              <li><a class="dropdown-item" href="pages/qu-est-ce-que.html">Qu'est-ce-qu'une thérapie de couple ?</a>
-              </li>
+              <li><a class="dropdown-item" href="pages/qu-est-ce-que.html">Qu'est-ce qu'une thérapie de couple ?</a></li>
               <li><a class="dropdown-item" href="pages/quand.html">Quand consulter ?</a></li>
-              <li><a class="dropdown-item" href="pages/objectifs.html">Quels sont les objectifs ?</a></li>
+              <li><a class="dropdown-item" href="pages/objectifs.html">Objectifs</a></li>
             </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#faq">FAQ</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#contact">Contact</a>
@@ -90,381 +97,528 @@
     </div>
   </nav>
 
-
-
-
   <!-- Hero Section -->
-  <section id="home" class="hero-section" style="padding-top: 120px;">
+  <section id="home" class="hero-section">
     <div class="container">
       <div class="row align-items-center">
-        <div class="col-lg-4 text-center mt-4 mt-lg-0">
-          <img src="assets/flowers.png" alt="flowers" class="flower" style="max-width: 400px;">
+        <div class="col-lg-4 text-center mb-4 mb-lg-0">
+          <img src="assets/flowers.webp" alt="Illustration florale - Cabinet thérapie de couple Magland" class="flower-image" loading="eager" width="400" height="400">
         </div>
         <div class="col-lg-1"></div>
         <div class="col-lg-7">
-          <h1 class="hero-title">
-            Thérapeute de couple à Magland – Retrouver équilibre, communication et confiance
-          </h1>
-          <p>Vous traversez une période difficile dans votre relation ? Je vous accompagne pour comprendre les blocages, renouer le dialogue et redonner du sens à votre couple, dans un cadre bienveillant et confidentiel.</p>
-          <h2 class="hero-subtitle">
-            Prendre soin de son couple, c’est prendre soin de soi.
-          </h2>
-          <p class="hero-subtitle red">
-            <strong>Je vous accueille dans mon cabinet de thérapie de couple.</strong><br>
-          </p>
-          <p class="hero-subtitle">
-            J’accompagne les couples – et individuellement les personnes qui s’interrogent sur leur relation amoureuse –
-            à mieux se comprendre, renouer le dialogue, explorer et traverser les difficultés relationnelles auxquelles
-            ils sont confrontés.<br>
-          </p>
-          <p class="hero-subtitle">
-            Chaque couple rencontre des moments de tension ou de doute : disputes répétées, perte de confiance, crise,
-            sentiment d’éloignement, étape de vie difficile…<br>
+          <h1 class="hero-title">Thérapeute de couple à Magland – Retrouver équilibre, communication et confiance</h1>
+          <p class="hero-lead">Vous traversez une période difficile dans votre relation ? Je vous accompagne pour comprendre les blocages, renouer le dialogue et redonner du sens à votre couple, dans un cadre bienveillant et confidentiel.</p>
+          
+          <div class="hero-highlight">
+            <i class="fas fa-heart text-danger me-2"></i>
+            <strong>Prendre soin de son couple, c'est prendre soin de soi.</strong>
+          </div>
 
-            Ces épreuves peuvent fragiliser le lien, mais elles peuvent aussi <strong> devenir une opportunité de
-              croissance et
-              de transformation.</strong><br>
-          </p>
-          <p class="hero-subtitle">
-            <i>“Un couple qui va bien n’est pas un couple sans problème, c’est un couple qui sait résoudre ses
-              problèmes“.</i>
-            Robert Neuburger.<br>
-          </p>
-          <p class="hero-subtitle">
-            Je vous propose un espace d’écoute bienveillant et confidentiel, propice à renouer ou renforcer la
-            communication avec votre partenaire et améliorer votre compréhension mutuelle.<br>
-            Il est question d’inventer ensemble un nouvel équilibre et de se réaccorder sur une nouvelle tonalité.
-          </p>
-          <div class="d-flex flex-wrap gap-3">
-            <a href="#contact" class="btn btn-primary-custom">Je prends rendez-vous</a>
-            <a href="#about" class="btn btn-outline-custom">Découvrir les séances</a>
+          <p class="hero-text">J'accompagne les couples – et individuellement les personnes qui s'interrogent sur leur relation amoureuse – à mieux se comprendre, renouer le dialogue et traverser les difficultés relationnelles.</p>
+          
+          <blockquote class="hero-quote">
+            <i class="fas fa-quote-left"></i>
+            Un couple qui va bien n'est pas un couple sans problème, c'est un couple qui sait résoudre ses problèmes.
+            <cite>– Robert Neuburger</cite>
+          </blockquote>
+
+          <div class="d-flex flex-wrap gap-3 mt-4">
+            <a href="#contact" class="btn btn-primary-custom">
+              <i class="fas fa-calendar-check me-2"></i>Je prends rendez-vous
+            </a>
+            <a href="#consultations" class="btn btn-outline-custom">
+              <i class="fas fa-info-circle me-2"></i>Découvrir les séances
+            </a>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-
-
-  <!-- About Section -->
-  <section id="about" class="section-padding" style="background-color: var(--beige);">
+  <!-- About Section avec Accordéons -->
+  <section id="about" class="section-padding bg-beige">
     <div class="container">
-      <h2 class="section-title">Mon parcours de thérapeute de couple et d’accompagnante relationnelle à Magland</h2>
+      <h2 class="section-title">Mon parcours et mon approche thérapeutique</h2>
       <div class="decorative-element"></div>
-      <div class="row align-items-top">
 
-        <!-- Mon parcours -->
-
-        <div class="col-lg-4 parcours" style="padding-right: 4rem;">
-          <h3 class="section-subtile">Mon parcours</h3>
-
-          <p class="lead">
-            <i class="fas fa-check-circle text-success me-2"></i><strong>Certification de thérapeute de couple depuis
-              2025. </strong><br>
-
-            Je me suis engagée en 2023 dans une formation longue en thérapie de couple d’orientation systémique à
-            l’<a target="_blank" rel="noopener noreferrer" href="https://www.ifatc.com/" style="color: green;">IFATC</a>
-            (Institut de formation et d’application
-            des théories de la
-            communication- Lyon), membre de l'<a target="_blank" rel="noopener noreferrer"
-              href="https://europeanfamilytherapy.eu/fr/accueil/" style="color: green;">EFTA</a>
-            (Association Européenne de Thérapie Familiale).
-            En complément de mon activité libérale, je suis également thérapeute au sein d'un dispositif spécifique de
-            thérapie familiale
-          </p>
-
-          <p class="lead">
-            <br>
-            <i class="fas fa-check-circle text-success me-2"></i><strong>Ttitulaire d'un diplôme d'Etat de travailleur
-              social depuis 1992.</strong><br>
-
-            Mon parcours représente plus de 30 ans d’accompagnement d’innombrables personnes, couples et familles,
-            confrontées à des situations complexes de vie.
-            Cette expérience m’a permis de développer une écoute attentive et une compréhension fine des relations
-            humaines.
-            Dans le cadre de mon exercice en pédopsychiatrie, je mène régulièrement des
-            co-thérapies.<br>
-          </p>
-          <p class="lead">
-            <i class="fas fa-check-circle text-success me-2"></i><strong>Formations
-              complémentaires</strong> tout au long de ce parcours
-            (histoire de vie, analyse transactionnelle, systémie, psychodynamique). <br>
-
-          </p>
-
-        </div>
-
-        <!-- Portrait -->
+      <div class="row align-items-center mb-5">
         <div class="col-lg-4 text-center mb-4 mb-lg-0">
-          <img src="assets/portrait.JPG" alt="Sonia Michaud" class="img-fluid about-image">
+          <img src="assets/portrait.JPG" alt="Sonia Michaud - Thérapeute de couple certifiée à Magland" class="img-fluid about-image" loading="lazy" width="400" height="600">
         </div>
+        
+        <div class="col-lg-8">
+          <!-- Accordéon Parcours -->
+          <div class="accordion modern-accordion" id="aboutAccordion">
+            
+            <!-- Mon Parcours -->
+            <div class="accordion-item">
+              <h3 class="accordion-header" id="headingParcours">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseParcours" aria-expanded="true" aria-controls="collapseParcours">
+                  <i class="fas fa-graduation-cap me-3"></i>
+                  <strong>Mon parcours professionnel</strong>
+                </button>
+              </h3>
+              <div id="collapseParcours" class="accordion-collapse collapse show" aria-labelledby="headingParcours" data-bs-parent="#aboutAccordion">
+                <div class="accordion-body">
+                  <ul class="custom-list">
+                    <li>
+                      <i class="fas fa-check-circle text-success me-2"></i>
+                      <strong>Certification de thérapeute de couple depuis 2025</strong><br>
+                      Formation longue en thérapie de couple d'orientation systémique à l'<a href="https://www.ifatc.com/" target="_blank" rel="noopener">IFATC</a> (Lyon), membre de l'<a href="https://europeanfamilytherapy.eu/fr/accueil/" target="_blank" rel="noopener">EFTA</a>.
+                    </li>
+                    <li>
+                      <i class="fas fa-check-circle text-success me-2"></i>
+                      <strong>Diplôme d'État de travailleur social depuis 1992</strong><br>
+                      Plus de 30 ans d'accompagnement de personnes, couples et familles dans des situations complexes. Pratique régulière de co-thérapies en pédopsychiatrie.
+                    </li>
+                    <li>
+                      <i class="fas fa-check-circle text-success me-2"></i>
+                      <strong>Formations complémentaires continues</strong><br>
+                      Histoire de vie, analyse transactionnelle, systémie, approche psychodynamique.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
 
+            <!-- Mon Approche -->
+            <div class="accordion-item">
+              <h3 class="accordion-header" id="headingApproche">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseApproche" aria-expanded="false" aria-controls="collapseApproche">
+                  <i class="fas fa-compass me-3"></i>
+                  <strong>Mon approche thérapeutique</strong>
+                </button>
+              </h3>
+              <div id="collapseApproche" class="accordion-collapse collapse" aria-labelledby="headingApproche" data-bs-parent="#aboutAccordion">
+                <div class="accordion-body">
+                  <p class="mb-3">Ma pratique s'appuie sur trois piliers complémentaires :</p>
+                  <ul class="custom-list">
+                    <li>
+                      <i class="fas fa-users text-primary me-2"></i>
+                      <strong>Approche systémique</strong> : Le couple comme système vivant où chaque réaction influence l'autre. Les problèmes se comprennent dans les échanges relationnels, sans chercher de "coupable".
+                    </li>
+                    <li>
+                      <i class="fas fa-heart text-danger me-2"></i>
+                      <strong>Théorie de l'attachement</strong> : Comprendre comment nos expériences affectives précoces façonnent nos relations amoureuses actuelles.
+                    </li>
+                    <li>
+                      <i class="fas fa-brain text-info me-2"></i>
+                      <strong>Approche psychodynamique</strong> : Explorer les histoires personnelles, blessures et ressources qui impactent la relation de couple.
+                    </li>
+                  </ul>
+                  <p class="mt-3 mb-0"><strong>Posture de neutralité bienveillante</strong> : Je crée un cadre sécurisant où chacun peut s'exprimer et être entendu, sans jugement.</p>
+                </div>
+              </div>
+            </div>
 
-        <!-- Mon approche -->
-
-        <div class="col-lg-4 approche" style="padding-left: 4rem;">
-          <h3 class="section-subtitle"> Mon approche </h3>
-          <p class="lead">
-            <br>
-            Ma pratique s’appuie principalement sur :<br>
-            <br>
-
-            <i class="fas fa-check-circle text-success me-2"></i><strong>L’approche systémique</strong>, qui considère
-            le couple comme un système vivant, où les réactions et comportements de
-            chacun s’influencent mutuellement. Les “problèmes” se comprennent alors sur le plan de ces échanges
-            relationnels et non dans l’idée de chercher une “faute” ou des “responsables”.
-          </p>
-          <p class="lead">
-            <i class="fas fa-check-circle text-success me-2"></i><strong>La théorie de l’attachement</strong>, qui aide
-            à comprendre comment nos expériences affectives précoces façonnent nos
-            relations amoureuses.
-          </p>
-          <p class="lead">
-            <i class="fas fa-check-circle text-success me-2"></i><strong>L’approche psychodynamique</strong>, qui
-            s’intéresse aux histoires personnelles, blessures et ressources de chacun,
-            dans la mesure où ces vécus individuels impactent également la relation de couple.
-          </p>
-          <p class="lead">
-            Je combine ces références à une posture de neutralité bienveillante : je ne prends pas parti, je crée un
-            cadre
-            sécurisant où chacun peut trouver sa place, se dire et être entendu.
-          </p>
-
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Services Section -->
-  <section id="consultations" class="section-padding" style="background-color: white;">
+  <!-- Services Section avec Carousel Mobile -->
+  <section id="consultations" class="section-padding">
     <div class="container">
-      <h2 class="section-title">Consultations</h2>
-      <p>Je propose des consultations de thérapie de couple à Magland, adaptées aux besoins de chaque partenaire et du couple dans sa globalité.</p>
+      <h2 class="section-title">Mes consultations de thérapie de couple</h2>
+      <p class="text-center mb-4">Accompagnement personnalisé pour couples et individus à Magland et environs (Cluses, Sallanches, Bonneville, Chamonix)</p>
       <div class="decorative-element"></div>
-      <div class="row g-4">
 
+      <!-- Carousel pour mobile -->
+      <div id="servicesCarousel" class="carousel slide d-md-none" data-bs-ride="carousel" data-bs-interval="4000">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#servicesCarousel" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#servicesCarousel" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#servicesCarousel" data-bs-slide-to="2"></button>
+          <button type="button" data-bs-target="#servicesCarousel" data-bs-slide-to="3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="card card-custom text-center p-4 mx-2">
+              <div class="card-icon">
+                <i class="fas fa-users"></i>
+              </div>
+              <h4 class="card-title">Pour qui ?</h4>
+              <p>Couples en difficulté et personnes s'interrogeant sur leur relation amoureuse.</p>
+              <a href="pages/pour-qui.html" class="btn btn-outline-custom btn-sm mt-3">En savoir plus</a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card card-custom text-center p-4 mx-2">
+              <div class="card-icon">
+                <i class="fas fa-comments"></i>
+              </div>
+              <h4 class="card-title">Qu'est-ce qu'une thérapie de couple ?</h4>
+              <p>Accompagnement pour améliorer la communication, apaiser les conflits et restaurer la relation.</p>
+              <a href="pages/qu-est-ce-que.html" class="btn btn-outline-custom btn-sm mt-3">En savoir plus</a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card card-custom text-center p-4 mx-2">
+              <div class="card-icon">
+                <i class="fas fa-clock"></i>
+              </div>
+              <h4 class="card-title">Quand consulter ?</h4>
+              <p>Pas besoin d'attendre la crise grave. La prévention est tout aussi importante.</p>
+              <a href="pages/quand.html" class="btn btn-outline-custom btn-sm mt-3">En savoir plus</a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card card-custom text-center p-4 mx-2">
+              <div class="card-icon">
+                <i class="fas fa-bullseye"></i>
+              </div>
+              <h4 class="card-title">Quels objectifs ?</h4>
+              <p>Retrouver une dynamique relationnelle fonctionnelle et épanouissante.</p>
+              <a href="pages/objectifs.html" class="btn btn-outline-custom btn-sm mt-3">En savoir plus</a>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#servicesCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Précédent</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#servicesCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Suivant</span>
+        </button>
+      </div>
+
+      <!-- Grille pour desktop -->
+      <div class="row g-4 d-none d-md-flex">
         <div class="col-lg-6 col-md-6">
-          <div class="card card-custom text-center p-4">
+          <div class="card card-custom text-center p-4 h-100">
             <div class="card-icon">
-              <i class="fas fa-question"></i>
+              <i class="fas fa-users"></i>
             </div>
             <h4 class="card-title">Pour qui ?</h4>
-            <p> Pour les couples et les individus.<br>
-              <br>
-            </p>
-            <a href="pages/pour-qui.html" class="btn btn-outline-custom btn-sm">En Savoir Plus</a>
+            <p>Couples en difficulté et personnes s'interrogeant sur leur relation amoureuse.</p>
+            <a href="pages/pour-qui.html" class="btn btn-outline-custom btn-sm mt-auto">En savoir plus</a>
           </div>
         </div>
 
         <div class="col-lg-6 col-md-6">
-          <div class="card card-custom text-center p-4">
+          <div class="card card-custom text-center p-4 h-100">
             <div class="card-icon">
               <i class="fas fa-comments"></i>
             </div>
-            <h4 class="card-title">Qu’est-ce qu’une thérapie de couple ?</h4>
-            <p>La thérapie de couple est un accompagnement professionnel visant à améliorer la communication, apaiser
-              les conflits, restaurer la relation. </p>
-            <a href="pages/qu-est-ce-que.html" class="btn btn-outline-custom btn-sm">En Savoir Plus</a>
+            <h4 class="card-title">Qu'est-ce qu'une thérapie de couple ?</h4>
+            <p>Accompagnement pour améliorer la communication, apaiser les conflits et restaurer la relation.</p>
+            <a href="pages/qu-est-ce-que.html" class="btn btn-outline-custom btn-sm mt-auto">En savoir plus</a>
           </div>
         </div>
 
         <div class="col-lg-6 col-md-6">
-          <div class="card card-custom text-center p-4">
+          <div class="card card-custom text-center p-4 h-100">
             <div class="card-icon">
               <i class="fas fa-clock"></i>
             </div>
             <h4 class="card-title">Quand consulter ?</h4>
-            <p>Il n’est pas nécessaire d’attendre que la relation soit en crise grave pour consulter.</p>
-            <a href="pages/quand.html" class="btn btn-outline-custom btn-sm">En Savoir Plus</a>
+            <p>Pas besoin d'attendre la crise grave. La prévention est tout aussi importante.</p>
+            <a href="pages/quand.html" class="btn btn-outline-custom btn-sm mt-auto">En savoir plus</a>
           </div>
         </div>
 
         <div class="col-lg-6 col-md-6">
-          <div class="card card-custom text-center p-4">
+          <div class="card card-custom text-center p-4 h-100">
             <div class="card-icon">
-              <i class="fas fa-heart"></i>
+              <i class="fas fa-bullseye"></i>
             </div>
-            <h4 class="card-title">Quels sont les objectifs ?</h4>
-            <p>Retrouver une dynamique fonctionnelle et épanouissante.<br>
-              <br>
-            </p>
-            <a href="pages/objectifs.html" class="btn btn-outline-custom btn-sm">En Savoir Plus</a>
+            <h4 class="card-title">Quels objectifs ?</h4>
+            <p>Retrouver une dynamique relationnelle fonctionnelle et épanouissante.</p>
+            <a href="pages/objectifs.html" class="btn btn-outline-custom btn-sm mt-auto">En savoir plus</a>
           </div>
         </div>
-
       </div>
     </div>
   </section>
 
-
-  <!-- Contact Section -->
-  <section id="contact" class="section-padding" style="background-color: var(--beige);">
+  <!-- FAQ Section -->
+  <section id="faq" class="section-padding bg-beige">
     <div class="container">
-      <h2 class="section-title">Contact & prise de rendez-vous</h2>
-      <p>Pour toute demande d'information ou pour planifier une séance, vous pouvez me contacter directement par téléphone ou via le formulaire ci-dessous.</p>
+      <h2 class="section-title">Questions fréquentes sur la thérapie de couple</h2>
       <div class="decorative-element"></div>
+
       <div class="row">
         <div class="col-lg-8 mx-auto">
-          <div class="contact-form">
-            <div class="row">
-
-              <form class="col-lg-6 form" action="https://formsubmit.co/3904013b09f71fa384576fc0ae0ae84b" method="POST">
-                <input type="hidden" name="_captcha" value="false">
-                <h4 class="mb-4" style="color: var(--primary-red);">Contactez moi</h4>
-                <div class="mb-3">
-                  <label>Nom et prénom
-                    <input name="Nom&nbsp;et&nbsp;Prénom" type="text" class="form-control" placeholder="Votre Nom"
-                      aria-label="Nom et prénom" required>
-                  </label>
+          <div class="accordion faq-accordion" id="faqAccordion">
+            
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                  Combien de temps dure une séance de thérapie de couple ?
+                </button>
+              </h3>
+              <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Une séance dure environ <strong>1 heure</strong>. Le rythme des consultations est adapté à vos besoins, généralement toutes les 2 à 4 semaines.
                 </div>
-                <div class="mb-3">
-                  <label>Email
-                    <input name="Email" type="email" class="form-control" placeholder="Votre Email" aria-label="Email"
-                      required>
-                  </label>
-                </div>
-                <div class="mb-3">
-                  <label>Numéro de téléphone
-                    <input name="Numéro&nbsp;de&nbsp;Téléphone" type="tel" class="form-control"
-                      placeholder="Votre Numéro de Téléphone" aria-label="Numéro de téléphone">
-                  </label>
-                </div>
-                <div class="mb-3">
-                  <label>Mode de contact
-                    <select name="Mode&nbsp;de&nbsp;contact" class="form-control" aria-label="Mode de contact">
-                      <option>Mode de contact souhaité</option>
-                      <option>Téléphone</option>
-                      <option>Email</option>
-                    </select>
-                  </label>
-                </div>
-                <div class="mb-4">
-                  <label>Message
-                    <textarea name="Message" class="form-control" rows="4" placeholder="Votre Message"
-                      aria-label="Message"></textarea>
-                  </label>
-                </div>
-                <button type="submit" class="btn btn-primary-custom w-100">Envoyer</button>
-              </form>
-
-              <div class="col-lg-6">
-                <h4 class="mb-4" style="color: var(--primary-red);">Infos Pratiques</h4>
-                <div style="display: flex;">
-                  <i class="fas fa-map-marker-alt me-3" style="color: var(--primary-green); padding-top: 5px;"></i>
-                  <div class="mb-3" style="padding-left: 7.5px;"><a
-                      href="https://www.google.com/maps/place/865+Rue+nationale,+74300+Magland/" target="_blank"
-                      rel="noopener noreferrer" style="text-decoration: none; color: var(--dark-brown);"><span>865 Route
-                        Nationale<br>74300 Magland</span></a><br>
-                    1er étage, sans ascenseur<br>
-                    Parking gratuit en face de l'immeuble</div>
-
-                </div>
-                <div class="mb-3">
-                  <i class="fas fa-phone me-3" style="color: var(--primary-green);"></i>
-                  <a href="tel:+33612548968" style="color: var(--dark-brown); text-decoration: none;"><span>06 12 54 89
-                      68</span></a>
-                </div>
-                <div class="mb-3">
-                  <i class="fas fa-envelope me-3" style="color: var(--primary-green);"></i>
-                  <a href="mailto:contact@therapeute-de-couple.com"
-                    style="color: var(--dark-brown); text-decoration: none;"><span>contact@therapeute-de-couple.com</span></a>
-                </div>
-                <hr>
-                <h4 class="mb-4" style="color: var(--primary-red);">Consultations</h4>
-                <p>Uniquement sur rendez-vous, possible le samedi.</p>
-                <p>La durée des séances est d'environ une heure, tarifs de 50 à 70 Euros.</p>
-                <p>
-                  Règlement par chèque ou espèces. <br>
-                </p>
-                <p>
-                  Le rythme des séances est à convenir ensemble.
-                </p>
               </div>
             </div>
+
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                  Quel est le tarif d'une consultation ?
+                </button>
+              </h3>
+              <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Les tarifs varient entre <strong>50 et 70 euros</strong> par séance. Paiement par chèque ou espèces. Les consultations ne sont pas remboursées par la Sécurité sociale, mais certaines mutuelles prennent en charge une partie des frais.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                  Peut-on consulter individuellement pour des problèmes de couple ?
+                </button>
+              </h3>
+              <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Oui, absolument. Vous pouvez consulter <strong>seul(e)</strong> même si les difficultés concernent votre couple. Cela peut être une première étape avant d'envisager une thérapie de couple.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                  Proposez-vous des consultations en visio ?
+                </button>
+              </h3>
+              <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Oui, je propose des <strong>consultations en visioconférence</strong> pour les personnes qui ne peuvent pas se déplacer à Magland. Idéal pour les habitants de toute la Haute-Savoie et au-delà.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                  Combien de séances sont nécessaires ?
+                </button>
+              </h3>
+              <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Le nombre de séances varie selon les situations. Certaines difficultés se résolvent en quelques séances, d'autres nécessitent un accompagnement sur plusieurs mois. Nous faisons régulièrement le point ensemble sur l'évolution.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq6">
+                  Intervenez-vous dans d'autres villes que Magland ?
+                </button>
+              </h3>
+              <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Mon cabinet est situé à <strong>Magland</strong>, facilement accessible depuis Cluses, Sallanches, Bonneville, Passy, Chamonix et Megève. Les consultations en visio permettent également de suivre des personnes dans toute la France.
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
     </div>
   </section>
-</body>
-  
-  <!-- Footer -->
-<footer class="footer">
-    <div class="footer-container">
-        <div class="footer-content">
-            <!-- Section Contact -->
-            <div class="footer-section">
-                <h3>Contact</h3>
-                <div class="contact-item">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <div>
-                        <p>865 Rue nationale<br>74300 Magland</p>
-                    </div>
-                </div>
-                <div class="contact-item">
-                    <i class="fas fa-phone"></i>
-                    <div>
-                        <a href="tel:+33612548968">06 12 54 89 68</a>
-                    </div>
-                </div>
-                <div class="contact-item">
-                    <i class="fas fa-envelope"></i>
-                    <div>
-                        <a href="mailto:contact@therapeute-de-couple.com">contact@therapeute-de-couple.com</a>
-                    </div>
-                </div>
-                <a href="https://share.google/4c2pQa7MAfPxALnV1" target="_blank" rel="noopener" class="gmb-button">
-                    <i class="fas fa-map-marked-alt"></i>
-                    Voir sur Google Maps
-                </a>
-            </div>
 
-            <!-- Section Navigation -->
-            <div class="footer-section">
-                <h3>Navigation</h3>
-                <div class="footer-links">
-                    <a href="/index.html"><i class="fas fa-home"></i>Accueil</a>
-                    <a href="/pages/therapie-couple.html"><i class="fas fa-heart"></i>Thérapie de couple</a>
-                    <a href="/pages/therapie-individuelle.html"><i class="fas fa-user"></i>Thérapie individuelle</a>
-                    <a href="/pages/therapie-familiale.html"><i class="fas fa-users"></i>Thérapie familiale</a>
-                    <a href="/pages/contact.html"><i class="fas fa-paper-plane"></i>Contact</a>
-                    <a href="/mentions-legales.html"><i class="fas fa-file-alt"></i>Mentions légales</a>
-                </div>
-            </div>
+  <!-- Contact Section -->
+  <section id="contact" class="section-padding">
+    <div class="container">
+      <h2 class="section-title">Contact & prise de rendez-vous</h2>
+      <p class="text-center mb-4">Pour toute demande d'information ou planifier une séance, contactez-moi par téléphone ou via le formulaire</p>
+      <div class="decorative-element"></div>
 
-            <!-- Section Zone d'intervention -->
-            <div class="footer-section">
-                <h3>Zone d'intervention</h3>
-                <p style="margin-bottom: 1rem;">Consultations en cabinet et en visio dans toute la Haute-Savoie</p>
-                <div class="location-tags">
-                    <span class="location-tag">Magland</span>
-                    <span class="location-tag">Cluses</span>
-                    <span class="location-tag">Sallanches</span>
-                    <span class="location-tag">Bonneville</span>
-                    <span class="location-tag">Passy</span>
-                    <span class="location-tag">Megève</span>
-                    <span class="location-tag">Chamonix</span>
-                </div>
-            </div>
+      <div class="row g-4">
+        <!-- Formulaire -->
+        <div class="col-lg-6">
+          <div class="contact-form h-100">
+            <h4 class="mb-4" style="color: var(--primary-red);">
+              <i class="fas fa-envelope me-2"></i>Envoyez-moi un message
+            </h4>
+            <form action="https://formsubmit.co/3904013b09f71fa384576fc0ae0ae84b" method="POST">
+              <input type="hidden" name="_captcha" value="false">
+              <div class="mb-3">
+                <label for="nom" class="form-label">Nom et prénom *</label>
+                <input name="Nom et Prénom" id="nom" type="text" class="form-control" placeholder="Votre nom complet" required>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email *</label>
+                <input name="Email" id="email" type="email" class="form-control" placeholder="votre@email.com" required>
+              </div>
+              <div class="mb-3">
+                <label for="tel" class="form-label">Téléphone</label>
+                <input name="Téléphone" id="tel" type="tel" class="form-control" placeholder="06 12 34 56 78">
+              </div>
+              <div class="mb-3">
+                <label for="contact-mode" class="form-label">Mode de contact préféré</label>
+                <select name="Mode de contact" id="contact-mode" class="form-control">
+                  <option value="">Choisir...</option>
+                  <option value="Téléphone">Téléphone</option>
+                  <option value="Email">Email</option>
+                </select>
+              </div>
+              <div class="mb-4">
+                <label for="message" class="form-label">Message</label>
+                <textarea name="Message" id="message" class="form-control" rows="4" placeholder="Décrivez brièvement votre demande..."></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary-custom w-100">
+                <i class="fas fa-paper-plane me-2"></i>Envoyer ma demande
+              </button>
+            </form>
+          </div>
         </div>
 
-        <!-- Mots-clés SEO masqués -->
-        <div class="seo-keywords">
-            <p>Thérapeute de couple Magland | Thérapie de couple Cluses | Psychothérapie relationnelle Sallanches | 
-            Thérapie familiale Bonneville | Accompagnement émotionnel Passy | Consultation couple Megève | 
-            Thérapeute relationnel Chamonix | Thérapie de couple Haute-Savoie 74 | Consultations visio et cabinet | 
-            Renouer dialogue couple | Communication relationnelle | Confiance dans le couple | Résolution conflits conjugaux</p>
-        </div>
+        <!-- Infos pratiques + Map -->
+        <div class="col-lg-6">
+          <div class="contact-info h-100">
+            
+            <!-- Horaires et tarifs en avant -->
+            <div class="info-highlight mb-4">
+              <h4 style="color: var(--primary-red);">
+                <i class="fas fa-clock me-2"></i>Horaires & Tarifs
+              </h4>
+              <div class="info-box">
+                <p class="mb-2"><i class="fas fa-calendar-alt me-2 text-success"></i><strong>Consultations sur rendez-vous</strong></p>
+                <p class="mb-2"><i class="fas fa-calendar-check me-2 text-success"></i>Du lundi au samedi</p>
+                <p class="mb-3"><i class="fas fa-euro-sign me-2 text-success"></i><strong>Tarif :</strong> 50 à 70 € / séance (≈1h)</p>
+                <p class="mb-0 small text-muted"><i class="fas fa-credit-card me-2"></i>Paiement : chèque ou espèces</p>
+              </div>
+            </div>
 
-        <!-- Copyright -->
-        <div class="footer-bottom">
-            <p>Sonia Michaud — Thérapeute de couple à Magland (Haute-Savoie)</p>
-            <p>&copy; 2025 Nathan LHERBETTE. Tous droits réservés.</p>
+            <h4 class="mb-3" style="color: var(--primary-red);">
+              <i class="fas fa-map-marker-alt me-2"></i>Coordonnées
+            </h4>
+            
+            <div class="contact-detail">
+              <i class="fas fa-home me-3"></i>
+              <div>
+                <strong>Cabinet à Magland</strong><br>
+                865 Route Nationale<br>
+                74300 Magland<br>
+                <small class="text-muted">1er étage (sans ascenseur) • Parking gratuit</small>
+              </div>
+            </div>
+
+            <div class="contact-detail">
+              <i class="fas fa-phone me-3"></i>
+              <div>
+                <a href="tel:+33612548968" class="contact-link"><strong>06 12 54 89 68</strong></a>
+              </div>
+            </div>
+
+            <div class="contact-detail">
+              <i class="fas fa-envelope me-3"></i>
+              <div>
+                <a href="mailto:contact@therapeute-de-couple.com" class="contact-link">contact@therapeute-de-couple.com</a>
+              </div>
+            </div>
+
+            <!-- Mini Google Map intégrée -->
+            <div class="map-container mt-4">
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2759.8!2d6.6133!3d46.0133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478c6b5e8d5e5e5e%3A0x5e5e5e5e5e5e5e5e!2s865%20Route%20Nationale%2C%2074300%20Magland!5e0!3m2!1sfr!2sfr!4v1234567890" 
+                width="100%" 
+                height="250" 
+                style="border:0; border-radius: 10px;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Localisation du cabinet de thérapie de couple à Magland">
+              </iframe>
+              <a href="https://share.google/4c2pQa7MAfPxALnV1" target="_blank" rel="noopener" class="btn btn-outline-custom btn-sm mt-3 w-100">
+                <i class="fas fa-directions me-2"></i>Obtenir l'itinéraire
+              </a>
+            </div>
+
+          </div>
         </div>
+      </div>
     </div>
-</footer>
+  </section>
 
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-content">
+        <!-- Section Contact -->
+        <div class="footer-section">
+          <h3>Contact</h3>
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <p>865 Rue nationale<br>74300 Magland</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <div>
+              <a href="tel:+33612548968">06 12 54 89 68</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <a href="mailto:contact@therapeute-de-couple.com">contact@therapeute-de-couple.com</a>
+            </div>
+          </div>
+          <a href="https://share.google/4c2pQa7MAfPxALnV1" target="_blank" rel="noopener" class="gmb-button">
+            <i class="fas fa-map-marked-alt"></i>
+            Voir sur Google Maps
+          </a>
+        </div>
+
+        <!-- Section Navigation -->
+        <div class="footer-section">
+          <h3>Navigation</h3>
+          <div class="footer-links">
+            <a href="/index.html"><i class="fas fa-home"></i>Accueil</a>
+            <a href="pages/pour-qui.html"><i class="fas fa-users"></i>Pour qui ?</a>
+            <a href="pages/qu-est-ce-que.html"><i class="fas fa-question-circle"></i>Qu'est-ce qu'une thérapie ?</a>
+            <a href="pages/quand.html"><i class="fas fa-clock"></i>Quand consulter ?</a>
+            <a href="pages/objectifs.html"><i class="fas fa-bullseye"></i>Objectifs</a>
+            <a href="/mentions-legales.html"><i class="fas fa-file-alt"></i>Mentions légales</a>
+          </div>
+        </div>
+
+        <!-- Section Zone d'intervention -->
+        <div class="footer-section">
+          <h3>Zone d'intervention</h3>
+          <p style="margin-bottom: 1rem;">Consultations en cabinet et en visio dans toute la Haute-Savoie</p>
+          <div class="location-tags">
+            <span class="location-tag">Magland</span>
+            <span class="location-tag">Cluses</span>
+            <span class="location-tag">Sallanches</span>
+            <span class="location-tag">Bonneville</span>
+            <span class="location-tag">Passy</span>
+            <span class="location-tag">Megève</span>
+            <span class="location-tag">Chamonix</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mots-clés SEO masqués -->
+      <div class="seo-keywords">
+        <p>Thérapeute de couple Magland | Thérapie de couple Cluses | Psychothérapie relationnelle Sallanches | 
+        Thérapie familiale Bonneville | Accompagnement émotionnel Passy | Consultation couple Megève | 
+        Thérapeute relationnel Chamonix | Thérapie de couple Haute-Savoie 74 | Consultations visio et cabinet | 
+        Renouer dialogue couple | Communication relationnelle | Confiance dans le couple | Résolution conflits conjugaux</p>
+      </div>
+
+      <!-- Copyright -->
+      <div class="footer-bottom">
+        <p>Sonia Michaud — Thérapeute de couple à Magland (Haute-Savoie)</p>
+        <p>&copy; 2025 Nathan LHERBETTE. Tous droits réservés.</p>
+      </div>
+    </div>
+  </footer>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 
+</body>
 </html>
