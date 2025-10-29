@@ -20,13 +20,11 @@
 /* ====================================
    BASE STYLES
    ==================================== */
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
   font-family: "Matt Antique W03 Rom", Georgia, serif;
   color: var(--dark-brown);
@@ -35,7 +33,6 @@ body {
   position: relative;
   overflow-x: hidden;
 }
-
 html {
   scroll-behavior: smooth;
 }
@@ -44,16 +41,11 @@ label {
 }
 
 /* ====================================
-   NAVBAR
-   ==================================== */
-/* ...navbar styles inchangés... */
-
-/* ====================================
    HERO SECTION
    ==================================== */
 .hero-section {
   background: linear-gradient(135deg, #ffffff 0%, var(--beige) 100%);
-  padding-top: 85px; /* réduit depuis 130px */
+  padding-top: 85px;
   padding-bottom: 3.2rem;
   position: relative;
   overflow: hidden;
@@ -90,7 +82,7 @@ label {
   line-height: 1.2;
 }
 .hero-h1-spacing {
-  margin-top: 1.5rem; /* réduit le padding entre navbar et H1 */
+  margin-top: 1.5rem;
 }
 .hero-lead {
   font-size: 1.1rem;
@@ -98,8 +90,6 @@ label {
   margin-bottom: 1.5rem;
   line-height: 1.7;
 }
-/* ...hero highlight, quote, etc. inchangés... */
-
 /* ====================================
    ABOUT SECTION - IMAGE arrondie
    ==================================== */
@@ -113,7 +103,6 @@ label {
   transform: translateY(-5px);
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
 }
-
 /* ====================================
    ACCORDÉONS (About et FAQ)
    ==================================== */
@@ -137,9 +126,6 @@ label {
   padding: 1.5rem;
   background-color: white !important;
 }
-
-/* ...autres styles about list, etc... */
-
 /* ====================================
    CONSULTATIONS SOUS-TITRE centré
    ==================================== */
@@ -155,43 +141,8 @@ label {
   margin-bottom: 0.5rem;
   line-height: 1.6;
 }
-
 /* ====================================
-   CONTACT/ALIGNEMENT BOUTONS
-   ==================================== */
-.align-buttons {
-  align-items: end !important;
-}
-@media (min-width: 992px) {
-  .contact-form {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    justify-content: flex-end;
-  }
-  .contact-form form {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    justify-content: flex-end;
-  }
-  .contact-form button[type="submit"] {
-    margin-top: auto;
-  }
-  .map-container {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    justify-content: flex-end;
-  }
-  .gmb-button {
-    margin-top: auto;
-  }
-}
-
-/* ====================================
-   FOOTER (fix couleur, pbs responsive, homogénéisation)
+   FOOTER (fix couleur, responsive, homogénéisation)
    ==================================== */
 .footer {
   background-color: var(--darker-brown) !important;
@@ -214,9 +165,6 @@ label {
     gap: 2rem;
   }
 }
-
-/* ...autres styles footer, contact-item, links, bottom...restent inchangés... */
-
 /* ====================================
    SEO KEYWORDS masqués
    ==================================== */
@@ -228,5 +176,6 @@ label {
   height: 1px;
   overflow: hidden;
 }
-
-/* Reste du CSS section, cards, carousel, etc., inchangé */
+/* ====================================
+   Reste du CSS section, cards, carousel, grid, responsive, etc., inchangé
+   ==================================== */
