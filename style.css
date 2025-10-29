@@ -115,7 +115,7 @@ label {
 }
 
 /* ====================================
-   ACCORDÉONS (About et FAQ)
+   ACCORDÉONS (Mon parcours et FAQ)
    ==================================== */
 .modern-accordion .accordion-button,
 .faq-accordion .accordion-button {
@@ -138,11 +138,6 @@ label {
   background-color: white !important;
 }
 
-/* ...autres styles about list, etc... */
-
-/* ====================================
-   CONSULTATIONS SOUS-TITRE centré
-   ==================================== */
 .consultations-subtitle,
 .consultations-subtitle.text-center {
   display: block;
@@ -228,4 +223,40 @@ label {
   overflow: hidden;
 }
 
-/* Reste du CSS section, cards, carousel, etc., inchangé */
+@media (min-width: 992px) {
+  .align-buttons {
+    display: flex;
+    align-items: stretch;
+  }
+  .align-buttons > .col-lg-6 {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-form {
+    flex: 1 1 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  .contact-form form {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  .contact-form button[type="submit"] {
+    margin-top: auto;
+  }
+  .contact-info-wrapper {
+    flex: 1 1 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  .map-container {
+    margin-top: auto;
+  }
+  .gmb-button {
+    width: 100%;
+    margin-top: 8px;
+  }
