@@ -32,7 +32,6 @@ label {
 
 .navbar {
   background-color: var(--dark-brown) !important;
-  /* border-bottom: 2px solid var(--primary-green); */
   padding: 0;
 }
 
@@ -46,7 +45,6 @@ label {
   color: var(--light-sage) !important;
   border-bottom: 3px solid var(--light-sage);
 }
-
 
 .navbar-nav .nav-link {
   color: var(--beige);
@@ -95,7 +93,6 @@ label {
 .hero-section {
   background: white;
   padding: 4rem 0;
-  /* border-bottom: 1px solid var(--light-sage); */
 }
 
 .hero-title {
@@ -114,7 +111,6 @@ label {
 }
 
 .red {
-  /* color: var(--primary-red); */
   font-size: 1.5rem;
 }
 
@@ -235,27 +231,6 @@ label {
   box-shadow: 0 0 0 0.2rem rgba(107, 122, 84, 0.25);
 }
 
-.footer {
-  background-color: var(--dark-brown);
-  color: var(--beige);
-  padding: 2rem 0 2rem;
-}
-
-.footer h5 {
-  color: var(--primary-red);
-  margin-bottom: 1.5rem;
-}
-
-.footer-link {
-  color: var(--beige);
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.footer-link:hover {
-  color: var(--light-sage);
-}
-
 .decorative-element {
   width: 100px;
   height: 4px;
@@ -269,64 +244,10 @@ label {
   padding-bottom: 2rem;
 }
 
-@media (max-width: 768px) {
-  .navbar {
-    text-align: center;
-  }
+/* ====================================
+   FOOTER STYLES
+   ==================================== */
 
-  .navbar-brand {
-    padding: 1rem 0;
-  }
-
-  .hero-title {
-    font-size: 2rem;
-  }
-
-  .section-title {
-    font-size: 1.8rem;
-  }
-
-  .contact-form {
-    padding: 2rem;
-  }
-
-  .flower {
-    padding-bottom: 5rem;
-    padding-left: 1rem;
-    padding-right: 1.5rem;
-  }
-
-  .couple {
-    padding-bottom: 5rem;
-    padding-left: 0.5rem !important;
-    padding-right: 1rem !important;
-    margin: 0 !important;
-  }
-
-  .parcours {
-    padding: 0 calc(var(--bs-gutter-x) * .5) !important;
-    padding-bottom: 2rem !important;
-  }
-
-  .approche {
-    padding: 0 calc(var(--bs-gutter-x) * .5) !important;
-    padding-top: 2rem !important;
-  }
-
-  .form {
-    padding-bottom: 2rem;
-  }
-
-  .section-padding2 {
-    padding-top: 120px !important;
-    padding: 4rem 0;
-
-/* Variable pour le footer */
-:root {
-  --darker-brown: #3d2f1f;
-}
-
-/* Reset du footer précédent */
 .footer {
   background-color: var(--darker-brown) !important;
   color: var(--beige) !important;
@@ -449,7 +370,6 @@ label {
   color: var(--beige);
 }
 
-/* SEO Keywords - masqués visuellement mais présents pour les moteurs */
 .seo-keywords {
   position: absolute;
   left: -10000px;
@@ -459,8 +379,64 @@ label {
   overflow: hidden;
 }
 
-/* Responsive footer */
+/* ====================================
+   RESPONSIVE
+   ==================================== */
+
 @media (max-width: 768px) {
+  .navbar {
+    text-align: center;
+  }
+
+  .navbar-brand {
+    padding: 1rem 0;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .contact-form {
+    padding: 2rem;
+  }
+
+  .flower {
+    padding-bottom: 5rem;
+    padding-left: 1rem;
+    padding-right: 1.5rem;
+  }
+
+  .couple {
+    padding-bottom: 5rem;
+    padding-left: 0.5rem !important;
+    padding-right: 1rem !important;
+    margin: 0 !important;
+  }
+
+  .parcours {
+    padding: 0 calc(var(--bs-gutter-x) * .5) !important;
+    padding-bottom: 2rem !important;
+  }
+
+  .approche {
+    padding: 0 calc(var(--bs-gutter-x) * .5) !important;
+    padding-top: 2rem !important;
+  }
+
+  .form {
+    padding-bottom: 2rem;
+  }
+
+  .section-padding2 {
+    padding-top: 120px !important;
+    padding: 4rem 0;
+  }
+
+  /* Footer responsive */
   .footer-content {
     grid-template-columns: 1fr;
     gap: 2rem;
@@ -489,6 +465,3 @@ label {
   .footer-links a {
     justify-content: center;
   }
-}
-  }
-}
