@@ -142,7 +142,7 @@ label {
 
 .hero-section {
   background: linear-gradient(135deg, #ffffff 0%, var(--beige) 100%);
-  padding: 140px 0 3.2rem;
+  padding: 130px 0 3.2rem;
   position: relative;
   overflow: hidden;
 }
