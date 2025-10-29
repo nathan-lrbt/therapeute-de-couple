@@ -142,7 +142,7 @@ label {
 
 .hero-section {
   background: linear-gradient(135deg, #ffffff 0%, var(--beige) 100%);
-  padding: 140px 0 4rem;
+  padding: 220px 0 4rem;
   position: relative;
   overflow: hidden;
 }
@@ -273,7 +273,7 @@ label {
    ==================================== */
 
 .section-padding {
-  padding: 3rem 0;
+  padding: 1.5rem 0;
 }
 
 .bg-beige {
@@ -367,11 +367,7 @@ label {
   padding: 1.5rem;
   background-color: white;
   @media (min-width: 992px) {
-  .modern-accordion .accordion-button {
-    pointer-events: none;
-  }
-  .modern-accordion .accordion-button::after {
-    display: none;
+    
 }
 
 .custom-list {
