@@ -20,13 +20,11 @@
 /* ====================================
    BASE STYLES
    ==================================== */
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
   font-family: "Matt Antique W03 Rom", Georgia, serif;
   color: var(--dark-brown);
@@ -35,7 +33,6 @@ body {
   position: relative;
   overflow-x: hidden;
 }
-
 html {
   scroll-behavior: smooth;
 }
@@ -44,16 +41,88 @@ label {
 }
 
 /* ====================================
-   NAVBAR
+   NAVBAR - Bootstrap 5 base fixes and custom styles
    ==================================== */
-/* ...navbar styles inchangés... */
+.navbar {
+  background-color: var(--dark-brown) !important;
+  padding: 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.navbar-brand {
+  font-weight: bold;
+  color: var(--beige) !important;
+  font-size: 2rem;
+  transition: transform 0.3s ease;
+}
+.navbar-brand:hover {
+  transform: scale(1.05);
+}
+.active {
+  color: var(--light-sage) !important;
+  border-bottom: 3px solid var(--light-sage);
+}
+.navbar-nav .nav-link {
+  color: var(--beige);
+  font-weight: 500;
+  font-size: 1.5rem;
+  padding: 1.5rem 0 1rem 0 !important;
+  margin: 0 1rem 5px 1rem;
+  transition: color 0.3s ease, transform 0.2s ease;
+  position: relative;
+}
+.navbar-nav .nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 3px;
+  background: var(--light-sage);
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+.navbar-nav .nav-link:hover::after {
+  width: 80%;
+}
+.navbar-nav .nav-link:hover {
+  color: var(--light-sage) !important;
+  transform: translateY(-2px);
+}
+.dropdown-menu {
+  background-color: var(--dark-brown);
+  border-color: var(--light-sage);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+.dropdown-item {
+  color: var(--beige);
+  transition: all 0.3s ease;
+}
+.dropdown-item:hover {
+  color: var(--light-sage) !important;
+  background-color: rgba(169, 178, 157, 0.1) !important;
+  transform: translateX(5px);
+}
+.dropdown-item.active {
+  background-color: var(--dark-brown) !important;
+}
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(244,239,230, 0.96)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.custom-toggler {
+  border-color: var(--beige);
+  transition: transform 0.3s ease;
+}
+.custom-toggler:hover {
+  color: var(--light-sage) !important;
+  transform: rotate(90deg);
+}
 
 /* ====================================
    HERO SECTION
    ==================================== */
 .hero-section {
   background: linear-gradient(135deg, #ffffff 0%, var(--beige) 100%);
-  padding-top: 85px; /* réduit depuis 130px */
+  padding-top: 85px;
   padding-bottom: 3.2rem;
   position: relative;
   overflow: hidden;
@@ -90,7 +159,7 @@ label {
   line-height: 1.2;
 }
 .hero-h1-spacing {
-  margin-top: 1.5rem; /* réduit le padding entre navbar et H1 */
+  margin-top: 1.5rem;
 }
 .hero-lead {
   font-size: 1.1rem;
@@ -117,6 +186,18 @@ label {
 /* ====================================
    ACCORDÉONS (About et FAQ)
    ==================================== */
+.modern-accordion .accordion-item {
+  border: none;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+.modern-accordion .accordion-item:hover {
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
+  transform: translateY(-2px);
+}
 .modern-accordion .accordion-button,
 .faq-accordion .accordion-button {
   background-color: white !important;
@@ -138,8 +219,6 @@ label {
   background-color: white !important;
 }
 
-/* ...autres styles about list, etc... */
-
 /* ====================================
    CONSULTATIONS SOUS-TITRE centré
    ==================================== */
@@ -157,20 +236,24 @@ label {
 }
 
 /* ====================================
-   CONTACT/ALIGNEMENT BOUTONS
+   CONTACT/ALIGNEMENT BOUTONS (corrigé)
    ==================================== */
 .align-buttons {
-  align-items: end !important;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: flex-end;
 }
 @media (min-width: 992px) {
-  .contact-form {
+  .align-buttons > .col-lg-6 {
     display: flex;
     flex-direction: column;
-    height: 100%;
     justify-content: flex-end;
   }
+  .contact-form {
+    height: 100%;
+  }
   .contact-form form {
-    flex-grow: 1;
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -179,14 +262,17 @@ label {
   .contact-form button[type="submit"] {
     margin-top: auto;
   }
-  .map-container {
+  .contact-info-wrapper {
     display: flex;
     flex-direction: column;
     height: 100%;
     justify-content: flex-end;
   }
-  .gmb-button {
+  .map-container {
     margin-top: auto;
+  }
+  .gmb-button {
+    margin-top: 8px;
   }
 }
 
@@ -214,7 +300,6 @@ label {
     gap: 2rem;
   }
 }
-/* ...autres styles footer, contact-item, links, bottom...restent inchangés... */
 
 /* ====================================
    SEO KEYWORDS masqués
