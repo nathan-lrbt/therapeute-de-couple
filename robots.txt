@@ -1,3 +1,14 @@
+# robots.txt for therapeute-de-couple.com - updated 2025-10-31
+
 User-agent: *
+# Autorise tous les robots à tout crawler par défaut
 Allow: /
+
+# Bloque des URLs de recherche interne ou paramètres inutiles pour préserver le budget crawl
+Disallow: /*?s=
+Disallow: /*?*
+
+# Pas de blocage des ressources CSS, JS, images nécessaires au rendu
+
+# Sitemap pour faciliter la découverte des pages
 Sitemap: https://therapeute-de-couple.com/sitemap.xml
