@@ -1,29 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Pages principales -->
   <url>
     <loc>https://therapeute-de-couple.com/</loc>
-    <lastmod>2025-08-25</lastmod>
+    <lastmod>2025-10-31</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://therapeute-de-couple.com/pages/pour-qui.html</loc>
-    <lastmod>2025-08-25</lastmod>
+    <loc>https://therapeute-de-couple.com/pour-qui-consulter/</loc>
+    <lastmod>2025-10-31</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://therapeute-de-couple.com/pages/qu-est-ce-que.html</loc>
-    <lastmod>2025-08-25</lastmod>
+    <loc>https://therapeute-de-couple.com/therapie-de-couple/</loc>
+    <lastmod>2025-10-31</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://therapeute-de-couple.com/pages/quand.html</loc>
-    <lastmod>2025-08-25</lastmod>
+    <loc>https://therapeute-de-couple.com/quand-consulter/</loc>
+    <lastmod>2025-10-31</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://therapeute-de-couple.com/pages/objectifs.html</loc>
-    <lastmod>2025-08-25</lastmod>
+    <loc>https://therapeute-de-couple.com/objectifs/</loc>
+    <lastmod>2025-10-31</lastmod>
     <priority>1.0</priority>
   </url>
-  <!-- Add more pages here -->
+
+  <!-- Pages locales -->
+  <url>
+    <loc>https://therapeute-de-couple.com/psychoterapeute-a-passy</loc>
+    <lastmod>2025-10-31</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://therapeute-de-couple.com/therapeuthe-de-couple-a-sallanches</loc>
+    <lastmod>2025-10-31</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://therapeute-de-couple.com/therapie-de-couple-a-sallanches</loc>
+    <lastmod>2025-10-31</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Mentions légales -->
+  <url>
+    <loc>https://therapeute-de-couple.com/mentions-legales/</loc>
+    <lastmod>2025-10-31</lastmod>
+    <priority>0.5</priority>
+  </url>
+
 </urlset>
