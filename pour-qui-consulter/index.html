@@ -74,7 +74,7 @@
 </head>
 <body data-bs-spy="scroll" data-bs-target="#navbar">
 
-  <nav id="navbar" class="navbar navbar-expand-lg navbar-dark fixed-top">
+   <nav id="navbar" class="navbar navbar-expand-lg navbar-dark fixed-top">
     <div class="container">
       <a class="navbar-brand" href="/"><strong>Sonia Michaud</strong></a>
       <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -82,19 +82,22 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="/#mon-experience">Mon expérience</a></li>
-          <li class="nav-item"><a class="nav-link" href="/#consultations">Mes consultations</a></li>
+          <li class="nav-item"><a class="nav-link" href="#mon-experience">Mon expérience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#consultations">Mes consultations</a></li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">En savoir plus</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="/therapie-de-couple">Qu'est-ce qu'une thérapie de couple ?</a></li>
-              <li><a class="dropdown-item" href="/pour-qui-consulter">À qui s'adressent les thérapies de couple ?</a></li>
-              <li><a class="dropdown-item" href="/quand-consulter">Quand consulter ?</a></li>
-              <li><a class="dropdown-item" href="/objectifs">Objectifs de la thérapie</a></li>
-            </ul>
-          </li>
-          <li class="nav-item"><a class="nav-link" href="/#faq">FAQ</a></li>
-          <li class="nav-item"><a class="nav-link" href="/#contact">Contact</a></li>
+  <a id="dropdownEnSavoirPlus" class="nav-link d-flex align-items-center gap-2" role="button" data-bs-toggle="dropdown" aria-expanded="false" tabindex="0" style="cursor:pointer;">
+    En savoir plus
+    <span id="chevronEnSavoirPlus" class="fa-solid fa-chevron-down" style="transition:transform 0.3s; color:inherit; font-size:1.05em;"></span>
+  </a>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="/therapie-de-couple">Qu'est-ce qu'une thérapie de couple ?</a></li>
+    <li><a class="dropdown-item" href="/pour-qui-consulter">À qui s'adressent les thérapies de couple ?</a></li>
+    <li><a class="dropdown-item" href="/quand-consulter">Quand consulter ?</a></li>
+    <li><a class="dropdown-item" href="/objectifs">Objectifs de la thérapie</a></li>
+  </ul>
+</li>
+          <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
       </div>
     </div>
@@ -454,6 +457,35 @@
     </div>
   </div>
 </footer>
+
+  <script>
+// Animation rotation du chevron à l’ouverture/fermeture + accessibilité clic/touche sur la flèche
+(function () {
+  var dropdownToggle = document.getElementById('dropdownEnSavoirPlus');
+  var chevron = document.getElementById('chevronEnSavoirPlus');
+  var dropdownMenu = dropdownToggle.nextElementSibling;
+
+  // Bootstrap gère aria-expanded sur le lien lors du toggle, donc on l'utilise pour l'animation
+  dropdownToggle.addEventListener('shown.bs.dropdown', function () {
+    chevron.style.transform = 'rotate(180deg)';
+  });
+  dropdownToggle.addEventListener('hidden.bs.dropdown', function () {
+    chevron.style.transform = '';
+  });
+
+  // Permet le clic sur toute la zone texte+chevron et l’accessibilité au clavier tab/entrée
+  chevron.addEventListener('click', function (e) {
+    e.stopPropagation();
+    dropdownToggle.click();
+  });
+  chevron.addEventListener('keydown', function (e) {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      dropdownToggle.click();
+    }
+  });
+})();
+</script>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 </body>
