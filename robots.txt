@@ -1,4 +1,4 @@
-# robots.txt for therapeute-de-couple.com - updated 2025-10-31
+# robots.txt for therapeute-de-couple.com - updated 2025-11-01
 
 User-agent: *
 # Autorise tous les robots à tout crawler par défaut
