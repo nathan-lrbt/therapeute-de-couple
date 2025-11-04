@@ -76,33 +76,6 @@ label { width: 100%; }
 }
 .custom-toggler { border-color: var(--beige); transition: transform 0.3s ease; }
 .custom-toggler:hover { color: var(--light-sage)!important; transform: rotate(90deg); }
-@media (max-width: 991px) {
-  /* Centre tous les liens navbar sur mobile */
-  .navbar-nav .nav-link {
-    text-align: center;
-    padding: 1rem 0;
-  }
-  
-  /* Centre spécifiquement le dropdown "En savoir plus" */
-  #dropdownEnSavoirPlus {
-    justify-content: center;
-    text-align: center;
-  }
-  
-  /* Centre le chevron avec le texte */
-  #dropdownEnSavoirPlus #chevronEnSavoirPlus {
-    margin-left: 0.3rem;
-  }
-  
-  /* Centre les items du menu dropdown */
-  .dropdown-menu {
-    text-align: center;
-  }
-  
-  .dropdown-item {
-    text-align: center;
-  }
-}
 
 /* HERO SECTION */
 .hero-section {
@@ -118,6 +91,17 @@ label { width: 100%; }
   border-radius: 50%; z-index: 0;
 }
 .hero-section .container { position: relative; z-index: 1; }
+.hero-section img {
+  max-width: 100%;
+  width: 500px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  filter: drop-shadow(0 10px 20px rgba(0,0,0,0.1));
+  transition: transform 0.5s ease;
+}
+.hero-section img:hover { 
+  transform: scale(1.05) rotate(2deg); 
+}
 .flower-image {
   max-width: 100%; height: auto;
   filter: drop-shadow(0 10px 20px rgba(0,0,0,0.1));
@@ -391,11 +375,50 @@ label { width: 100%; }
 }
 
 /* RESPONSIVE */
+@media (max-width: 991px) {
+  /* Centre tous les liens navbar sur mobile */
+  .navbar-nav {
+    text-align: center;
+  }
+  
+  .navbar-nav .nav-link {
+    display: block;
+    text-align: center;
+    padding: 1rem 0;
+    margin: 0 auto;
+  }
+  
+  /* Centre spécifiquement le dropdown "En savoir plus" avec le chevron */
+  .navbar-nav .nav-item.dropdown {
+    text-align: center;
+  }
+  
+  #dropdownEnSavoirPlus {
+    justify-content: center !important;
+    display: inline-flex !important;
+    width: auto !important;
+  }
+  
+  /* Centre les items du menu dropdown */
+  .dropdown-menu {
+    text-align: center;
+    width: 100%;
+  }
+  
+  .dropdown-item {
+    text-align: center;
+  }
+}
+
 @media (max-width: 768px) {
   .navbar { text-align:center; }
   .navbar-brand { padding:1rem 0; font-size:1.5rem; }
   .navbar-nav .nav-link { font-size:1.2rem; padding:1rem 0 0.5rem 0 !important; }
   .hero-section { padding:100px 0 3rem; }
+  .hero-section img {
+    width: 100%;
+    max-width: 350px;
+  }
   .hero-title { font-size:1.8rem; }
   .hero-lead { font-size:1rem; }
   .section-title { font-size:1.8rem; }
